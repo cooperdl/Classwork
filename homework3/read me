@@ -1,0 +1,6 @@
+I started using gpio int test.c and it's make file.
+I added the code to read 4 different gpio inputs and turn on the usr0-usr3 leds on the beagle bone.
+I then created a 2 by 2 array to store the game board and would update the array when a button was pressed. 
+
+plug oneside of the buttons into ground and then plug each button into one of the folow pins. p9_11,p9_12,p9_13,p9_15.
+
