@@ -1,0 +1,4 @@
+1) socket.io is used to communicate between the bone and the browser.
+2) when an led is click it calls the onclick funciton wich sends a signal over the i2c line and changes the color of the button
+3) .on is the css entry which changes the color of the led matrix
+4) in order to change the led I will change onclick and the matrix function. the bowser will send which item has been clicked. and the matrix gets it's values from the registers on the led grid. 
