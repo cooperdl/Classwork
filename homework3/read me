@@ -4,3 +4,7 @@ I then created a 2 by 2 array to store the game board and would update the array
 
 plug oneside of the buttons into ground and then plug each button into one of the folow pins. p9_11,p9_12,p9_13,p9_15.
 
+Added 2 temp sensors on the i2c bus. in thermostat mode. the activate after a certain tempurature. I use this to clear the board and change the color of the board.
+
+
+
