@@ -35,6 +35,7 @@ From https://www.ridgerun.com/developer/wiki/index.php/Gpio-int-test.c
 #include <string.h>
 #include <errno.h>
 #include <unistd.h>
+
 #include <fcntl.h>
 #include <poll.h>
 #include <signal.h>	// Defines signal-handling functions (i.e. trap Ctrl-C)
@@ -430,8 +431,11 @@ int main(int argc, char **argv, char **envp)
 					for(col=0;col<WIDTH;col++){
 						board[row][col]=' ';
 					}
+					printf("\n");
+					system("i2cget -y 1 0x48 0");
+					printboard(board,file,colorint);
 				}
-				printboard(board,file,colorint);
+				
 				
 
 			}
@@ -448,8 +452,13 @@ int main(int argc, char **argv, char **envp)
 				}else{
 					colorint=0;
 				}
+				printf("\n");
+				system("i2cget -y 1 0x4a 0");
+				printboard(board,file,colorint);
 
 			}
+			
+			
 			
 				
 		}
